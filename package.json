@@ -1,0 +1,19 @@
+{
+  "name": "daily-diet-api",
+  "version": "1.0.0",
+  "description": "API criada para praticar desenvolvimento de api's rest",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "author": "theJRodrigues",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "fastify": "^5.3.2"
+  }
+}
