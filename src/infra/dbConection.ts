@@ -1,8 +1,10 @@
+import { env } from "./constants/envVariables";
 import knexSteup, { Knex } from "knex";
+
 export const config: Knex.Config = {
-  client: "sqlite",
+  client: env.KNEX_CLIENT,
   connection: {
-    filename: "./db/db.db",
+    filename: env.DB_URL,
   },
   useNullAsDefault: true,
   migrations: {

@@ -1,12 +1,18 @@
 import fastify from "fastify";
 import { knex } from "./dbConection";
+
 export const app = fastify();
+class main {
+  static execute() {
+    app.listen({ port: 3000 }, () => {
+      console.log("Server rodando");
+    });
 
-app.get("/", async (request, reply) => {
-  const test = await knex("sqlite_schema").select("*");
-  return test;
-});
-
-app.listen({ port: 3000 }, () => {
-  console.log("Server is running");
-});
+    app.get("/", async (request, reply) => {
+      await knex("customers").delete("*");
+      const test2 = await knex("customers").select("*");
+      return test2;
+    });
+  }
+}
+main.execute();
