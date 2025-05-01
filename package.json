@@ -4,7 +4,7 @@
   "description": "API criada para praticar desenvolvimento de api's rest",
   "main": "server.ts",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
+    "dev": "tsx watch src/infra/server.ts",
     "knex": "node --import tsx ./node_modules/.bin/knex"
   },
   "author": "theJRodrigues",
