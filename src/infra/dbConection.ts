@@ -1,4 +1,4 @@
-import { env } from "./constants/envVariables";
+import { env } from "../shared/constants/envVariables";
 import knexSteup, { Knex } from "knex";
 
 export const config: Knex.Config = {
